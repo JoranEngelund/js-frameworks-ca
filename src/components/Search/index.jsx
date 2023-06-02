@@ -1,15 +1,20 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import * as styled from "../Search/styled";
+
+/**
+ * Search component that returns a search form with an input for searching
+ * @returns <Search />
+ */
 
 export default function Search() {
   return (
     <div>
-      <form>
-        <label htmlFor="search">
-          <FontAwesomeIcon icon={faMagnifyingGlass} />
-        </label>
-        <input type="search" name="search" placeholder="Search..."></input>
-      </form>
+      <styled.SearchForm>
+        <styled.SearchInput
+          type="search"
+          name="search"
+          placeholder="Search..."
+        />
+      </styled.SearchForm>
     </div>
   );
 }
