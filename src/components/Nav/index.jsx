@@ -1,5 +1,4 @@
 import * as styled from "../Nav/styled.jsx";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 

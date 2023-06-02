@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const LogoLink = styled(Link)`
-  text-decoration: none;
   color: white;
-  margin-left: 0.5rem;
-  font-family: "Roboto";
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
 `;
