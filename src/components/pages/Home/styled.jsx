@@ -100,19 +100,14 @@ export const ProductSale = styled.p`
 
 export const ProductLink = styled.a`
   display: inline-block;
+  background-color: #3498db;
   color: #fff;
+  padding: 1rem 2rem;
   text-decoration: none;
-  font-weight: bold;
-  border: none;
-  background-color: rgb(0, 51, 102);
-  padding: 0.625rem 1.25rem;
-  border-radius: 0.25rem;
+  border-radius: 5px;
   transition: background-color 0.3s ease;
-  text-align: center;
-  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
 
   &:hover {
-    background-color: green;
-    color: white;
+    background-color: #2980b9;
   }
 `;
