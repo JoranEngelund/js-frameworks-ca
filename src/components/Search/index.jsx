@@ -29,7 +29,6 @@ export default function Search() {
     return productTitle.includes(searchQueryLowerCase) && searchQuery !== "";
   });
 
-  console.log(filteredQuery);
   return (
     <div>
       <styled.SearchForm>
