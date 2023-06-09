@@ -39,7 +39,6 @@ export default function Product() {
   useEffect(() => {
     const savedCartItems = localStorage.getItem("cartItems");
     const parsedCartItems = JSON.parse(savedCartItems);
-    console.log(parsedCartItems);
 
     parsedCartItems.map((item) => {
       {
