@@ -38,6 +38,7 @@ export default function Search() {
           placeholder="Search..."
           value={searchQuery}
           onChange={inputQuery}
+          autoFocus={false}
         />
         {filteredQuery.length > 0 && (
           <styled.ResultContainer>
