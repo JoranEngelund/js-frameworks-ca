@@ -1,9 +1,10 @@
 import useApi from "../../../hooks/useApi";
+import { useState, useEffect } from "react";
 import Loader from "../../Loader";
 import Error from "../../Error";
 import { useParams } from "react-router-dom";
 import * as styled from "./styled";
-
+import { useCart } from "../../Cart/CartContext";
 /**
  * Product component that displays a specific product fetched from an API.
  * Renders product card with information such as title, image, rating, price, description and reviews.
@@ -14,9 +15,9 @@ export default function Product() {
   let { id } = useParams();
   const API_URL = `https://api.noroff.dev/api/v1/online-shop/${id}`;
   const { data, isLoading, isError } = useApi(API_URL);
+  const { addToCart } = useCart();
 
   const products = data;
-  console.log(products);
 
   const {
     title,
@@ -28,6 +29,24 @@ export default function Product() {
     id: productId,
     reviews,
   } = products;
+
+  function handleAddToCart() {
+    addToCart(products);
+  }
+
+  const [added, setAdded] = useState(false);
+
+  useEffect(() => {
+    const savedCartItems = localStorage.getItem("cartItems");
+    const parsedCartItems = JSON.parse(savedCartItems);
+    console.log(parsedCartItems);
+
+    parsedCartItems.map((item) => {
+      {
+        item.id === productId && setAdded(true);
+      }
+    }, []);
+  });
 
   return (
     <styled.ProductWrapper>
@@ -55,7 +74,17 @@ export default function Product() {
               </>
             )}
           </styled.ProductPrices>
-          <styled.AddToCartButton>Add to cart</styled.AddToCartButton>
+          {added === true ? (
+            <styled.AddToCartButton onClick={handleAddToCart}>
+              Added to cart
+            </styled.AddToCartButton>
+          ) : (
+            <>
+              <styled.AddToCartButton onClick={handleAddToCart}>
+                Add to cart
+              </styled.AddToCartButton>
+            </>
+          )}
         </styled.ProductDetails>
       </styled.ProductCard>
       <styled.ReviewSection>

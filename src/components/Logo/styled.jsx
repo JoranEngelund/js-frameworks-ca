@@ -6,5 +6,6 @@ export const LogoLink = styled(Link)`
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 2rem;
   font-family: "Futura", sans-serif;
 `;

@@ -45,6 +45,7 @@ export const QueryResult = styled.a`
   gap: 1rem;
   transition: box-shadow 0.3s ease;
   color: black;
+  border-bottom: 1px solid lightgray;
 
   &:hover,
   &:focus {
