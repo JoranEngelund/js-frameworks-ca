@@ -9,7 +9,7 @@
 
 ## Description
 
-Evolve is an eCommerce store project developed with React, showcasing various pages, like specific product page, checkout page, checkout-success page, contact page with form etc. The eCommerce store utilizes an external API for data
+Evolve is an eCommerce store project developed with React, showcasing look-ahead searchbar, fully functional cart-system, various pages like specific product page, checkout page, checkout-success page, contact page with form etc. The eCommerce store utilizes an external API for data
 
 ## Main Features:
 - Universal responsive 
