@@ -85,7 +85,7 @@ export default function Contact() {
         {errors.email?.message && <p>{errors.email?.message}</p>}
       </div>
       <div>
-        <label htmlFor="body">Body *</label>
+        <label htmlFor="body">Message *</label>
         <input
           {...register(`body`, {
             required: true,
@@ -96,12 +96,12 @@ export default function Contact() {
           })}
           type="text"
           name="body"
-          placeholder="Body"
+          placeholder="Required, Min 3 characters"
         />
         {errors.body?.type === "required" && (
-          <p role="alert">Body is required</p>
+          <p role="alert">Message is required</p>
         )}
-        {errors.body?.message && <p>{errors.email?.message}</p>}
+        {errors.body?.message && <p>{errors.body?.message}</p>}
       </div>
       <button type="submit">Submit</button>
     </styled.FormContainer>

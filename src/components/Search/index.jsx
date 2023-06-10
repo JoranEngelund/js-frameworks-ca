@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import useApi from "../../hooks/useApi";
 import Loader from "../Loader";
