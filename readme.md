@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/35a01c11-fca8-4152-9f0d-1db735cfbe71/deploy-status)](https://app.netlify.com/sites/evolve-ecommerce/deploys)
 
-[EVOLVE - Live Site]([https://bid-it.netlify.app/index.html](https://evolve-ecommerce.netlify.app/))
+[EVOLVE - Live Site](https://evolve-ecommerce.netlify.app/)
 
 ![Skjermbilde 2023-06-10 100542](https://github.com/JoranEngelund/js-frameworks-ca/assets/56642663/67a63744-75c6-4635-9f8f-4d14045342c7)
 
